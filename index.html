@@ -24,6 +24,11 @@
             <li class="link"><a href="" class="link menu">Contacts</a></li>
         </ul>
         </nav>
+        <button type="button" class="mobile-menu-open js-open-menu">
+            <svg class="mobile-menu-open-icon" width="32" height="22">
+                <use href="./images/icons.svg#icon-menu-burger"></use>
+            </svg>
+        </button>
         <address class="contacts-box">
             <ul class="list contacts">
                 <li class="link"><a href="mailto:info@devstudio.com" class="link contacts">info@devstudio.com</a></li>
@@ -32,17 +37,24 @@
     
     </address>
     </div>
+    <div class="mobile-menu js-menu-container is-open">
+        <button type="button" class="modal-close-btn js-close-menu">
+            <svg class="modal-close-btn-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
    </header>
-   <main>
+   <!-- <main> -->
     <!-- Hero -->
-    <section class="section hero">
+    <!-- <section class="section hero">
         <div class="container">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
             <button type="button" class="btn-hero" data-modal-open>Order Service</button>
         </div>
-    </section>
+    </section> -->
     <!-- Section 1 -->
-    <section class="section features">
+    <!-- <section class="section features">
         <div class="container">
             <h2 hidden class="visually-hiden">features</h2>
             <ul class="main list">
@@ -85,31 +97,93 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </section> -->
     <!-- Section 2 -->
-    <section class="section doing">
+    <!-- <section class="section doing">
         <div class="container">
             <h2 class="title-second">What are we doing</h2>
             <ul class="img list">
                 <li class="img-list link">
-                    <img src="./images/image1.jpg" alt="image1" width="360">
+                    <picture>
+                        <source 
+                        srcset="./images/desktop/desk-doing1@1x.webp 1x, ./images/desktop/desk-doing1@2x.webp 2x"
+                        media="(min-width: 1200px)"
+                        type="image/webp"
+                        />
+                         <source 
+                        srcset="./images/desktop/desk-doing1@1x.jpg 1x, ./images/desktop/desk-doing1@2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                        />
+                        <img src="./images/image1.jpg" alt="image1" width="360">
+                    </picture>
                 </li>
                 <li class="img-list link">
-                    <img src="./images/image2.jpg" alt="image2" width="360">
+                    <picture>
+                        <source 
+                        srcset="./images/desktop/desk-doing2@1x.webp 1x, ./images/desktop/desk-doing2@2x.webp 2x"
+                        media="(min-width: 1200px)" 
+                        type="image/webp"
+                        />
+                        <source 
+                        srcset="./images/desktop/desk-doing2@1x.jpg 1x, ./images/desktop/desk-doing2@2x.jpg 2x"
+                        media="(min-width: 1200px)" 
+                        />
+                        <img src="./images/image2.jpg" alt="image2" width="360">
+                    </picture>
                 </li>
                 <li class="img-list link">
-                    <img src="./images/image3.jpg" alt="image3" width="360">
+                    <picture>
+                        <source 
+                        srcset="./images/desktop/desk-doing3@1x.webp 1x, ./images/desktop/desk-doing3@2x.webp 2x"
+                        media="(min-width: 1200px)" 
+                        type="image/webp" 
+                        />
+                        <source 
+                        srcset="./images/desktop/desk-doing3@1x.jpg 1x, ./images/desktop/desk-doing3@2x.jpg 2x"
+                        media="(min-width: 1200px)" 
+                        />
+                        <img src="./images/image3.jpg" alt="image3" width="360">
+                    </picture>
                 </li>
             </ul>
         </div>
-    </section>
+    </section> -->
     <!-- Section 3 -->
-    <section class="section team">
+    <!-- <section class="section team">
         <div class="container team">
             <h2 class="title-second">Our Team</h2>
             <ul class="face list">
                 <li class="face-list link">
-                    <img src="./images/img-2-1.jpg" alt="Mark" width="264">
+                    <picture> 
+                        <source 
+                        srcset="./images/desktop/desk-team1@1x.webp 1x, ./images/desktop/desk-team1@2x.webp 2x"
+                        media="(min-width: 1200px)" 
+                        type="image/webp"
+                        />
+                        <source srcset="./images/desktop/desk-team1@1x.jpg 1x, ./images/desktop/desk-team1@2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                        />
+
+                        <source 
+                        srcset="./images/tablet/tab-team1@1x.webp 1x, ./images/tablet/tab-team1@2x.webp 2x"
+                        media="(min-width: 768px)" 
+                        type="image/webp" 
+                        />
+                        <source 
+                        srcset="./images/tablet/tab-team1@1x.jpg 1x, ./images/tablet/tab-team1@1x.jpg 2x"
+                        media="(min-width: 768px)" 
+                        />
+
+                        <source 
+                        srcset="./images/mobile/mob-team1@1x.webp 1x, ./images/mobile/mob-team1@2x.webp 2x" 
+                        media="(max-width: 767px)"
+                        type="image/webp" 
+                        />
+                        <source 
+                        srcset="./images/mobile/mob-team1@1x.jpg 1x, ./images/mobile/mob-team1@1x.jpg 2x" 
+                        media="(max-width: 767px)" />
+                        <img src="./images/img-2-1.jpg" alt="Mark" width="264">
+                    </picture>
                     <div class="person">
                         <h3 class="title-three centr">Mark Guerrero</h3>
                         <p class="text centr">Product Designer</p>
@@ -146,7 +220,38 @@
                     </div>
                 </li>
                 <li class="face-list link">
-                    <img src="./images/img-2-2.jpg" alt="Tom" width="264">
+                    <picture>
+                        <source 
+                        srcset="./images/desktop/desk-team2@1x.webp 1x, ./images/desktop/desk-team2@2x.webp 2x"
+                        media="(min-width: 1200px)" 
+                        type="image/webp" 
+                        />
+                        <source 
+                        srcset="./images/desktop/desk-team2@1x.jpg 1x, ./images/desktop/desk-team2@2x.jpg 2x"
+                        media="(min-width: 1200px)" 
+                        />
+                        
+                        <source 
+                        srcset="./images/tablet/tab-team2@1x.webp 1x, ./images/tablet/tab-team2@2x.webp 2x" 
+                        media="(min-width: 768px)"
+                        type="image/webp" 
+                        />
+                        <source 
+                        srcset="./images/tablet/tab-team2@1x.jpg 1x, ./images/tablet/tab-team2@1x.jpg 2x" 
+                        media="(min-width: 768px)" 
+                        />
+                        
+                        <source 
+                        srcset="./images/mobile/mob-team2@1x.webp 1x, ./images/mobile/mob-team2@2x.webp 2x" 
+                        media="(max-width: 767px)"
+                        type="image/webp" 
+                        />
+                        <source 
+                        srcset="./images/mobile/mob-team2@1x.jpg 1x, ./images/mobile/mob-team2@1x.jpg 2x" 
+                        media="(max-width: 767px)" 
+                        />
+                        <img src="./images/img-2-2.jpg" alt="Tom" width="264">
+                    </picture>
                     <div class="person">
                         <h3 class="title-three centr">Tom Ford</h3>
                         <p class="text centr">Frontend Developer</p>
@@ -183,7 +288,38 @@
                     </div>
                 </li>
                 <li class="face-list link">
-                    <img src="./images/img-2-3.jpg" alt="Camila" width="264">
+                    <picture>
+                        <source 
+                        srcset="./images/desktop/desk-team3@1x.webp 1x, ./images/desktop/desk-team3@2x.webp 2x"
+                        media="(min-width: 1200px)" 
+                        type="image/webp" 
+                        />
+                        <source 
+                        srcset="./images/desktop/desk-team3@1x.jpg 1x, ./images/desktop/desk-team3@2x.jpg 2x"
+                        media="(min-width: 1200px)" 
+                        />
+                        
+                        <source 
+                        srcset="./images/tablet/tab-team3@1x.webp 1x, ./images/tablet/tab-team3@2x.webp 2x" 
+                        media="(min-width: 768px)"
+                        type="image/webp" 
+                        />
+                        <source 
+                        srcset="./images/tablet/tab-team3@1x.jpg 1x, ./images/tablet/tab-team3@1x.jpg 2x" 
+                        media="(min-width: 768px)" 
+                        />
+                        
+                        <source 
+                        srcset="./images/mobile/mob-team3@1x.webp 1x, ./images/mobile/mob-team3@2x.webp 2x" 
+                        media="(max-width: 767px)"
+                        type="image/webp" 
+                        />
+                        <source 
+                        srcset="./images/mobile/mob-team3@1x.jpg 1x, ./images/mobile/mob-team3@1x.jpg 2x" 
+                        media="(max-width: 767px)" 
+                        />
+                        <img src="./images/img-2-3.jpg" alt="Camila" width="264">
+                    </picture>
                     <div class="person">
                         <h3 class="title-three centr">Camila Garcia</h3>
                         <p class="text centr">Marketing</p>
@@ -220,7 +356,38 @@
                     </div>
                 </li>
                 <li class="face-list link">
-                    <img src="./images/img-2-4.jpg" alt="Daniel" width="264">
+                    <picture>
+                        <source 
+                        srcset="./images/desktop/desk-team4@1x.webp 1x, ./images/desktop/desk-team4@2x.webp 2x"
+                        media="(min-width: 1200px)" 
+                        type="image/webp" 
+                        />
+                        <source 
+                        srcset="./images/desktop/desk-team4@1x.jpg 1x, ./images/desktop/desk-team4@2x.jpg 2x"
+                        media="(min-width: 1200px)" 
+                        />
+                        
+                        <source 
+                        srcset="./images/tablet/tab-team4@1x.webp 1x, ./images/tablet/tab-team4@2x.webp 2x" 
+                        media="(min-width: 768px)"
+                        type="image/webp" 
+                        />
+                        <source 
+                        srcset="./images/tablet/tab-team4@1x.jpg 1x, ./images/tablet/tab-team4@1x.jpg 2x" 
+                        media="(min-width: 768px)" 
+                        />
+                        
+                        <source 
+                        srcset="./images/mobile/mob-team4@1x.webp 1x, ./images/mobile/mob-team4@2x.webp 2x" 
+                        media="(max-width: 767px)"
+                        type="image/webp" 
+                        />
+                        <source 
+                        srcset="./images/mobile/mob-team4@1x.jpg 1x, ./images/mobile/mob-team4@1x.jpg 2x" 
+                        media="(max-width: 767px)" 
+                        />
+                        <img src="./images/img-2-4.jpg" alt="Daniel" width="264">
+                    </picture>
                     <div class="person">
                         <h3 class="title-three centr">Daniel Wilson</h3>
                         <p class="text centr">UI Designer</p>
@@ -258,9 +425,9 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </section> -->
     <!-- Section 4 -->
-    <section class="section customers">
+    <!-- <section class="section customers">
         <div class="container">
             <h2 class="title-second">Customers</h2>
             <ul class="customers list">
@@ -309,9 +476,9 @@
             </ul>
         </div>
     </section>
-   </main>
+   </main> -->
    <!-- Footer -->
-   <footer class="footer">
+   <!-- <footer class="footer">
     <div class="container ftr">
         <div class="ftr-first">
             <a href="./index.html" class="logo-ftr link">Web<span class="studio-ftr">Studio</span></a>
@@ -367,9 +534,9 @@
             </form>
         </div>
     </div>            
-</footer>
+</footer> -->
 <!-- modal window -->
-<div class="backdrop is-hidden" data-modal>
+<!-- <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
             <svg class="modal-close-btn-icon" width="8" height="8">
@@ -453,6 +620,7 @@
         </form>
     </div>
 </div>
-<script src="./js/modal.js"></script>
+<script src="./js/modal.js"></script> -->
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
