@@ -27,15 +27,64 @@
                     <li class="link"><a href="" class="link menu">Contacts</a></li>
                 </ul>
             </nav>
+            <button type="button" class="mobile-menu-open js-open-menu" aria-controls="mobile-menu">
+                <svg class="mobile-menu-open-icon" width="32" height="22">
+                    <use href="./images/icons.svg#icon-menu-burger"></use>
+                </svg>
+            </button>
             <address class="contacts-box">
                 <ul class="list contacts">
-                    <li class="link"><a href="mailto:info@devstudio.com" class="link contacts">info@devstudio.com</a>
-                    </li>
+                    <li class="link"><a href="mailto:info@devstudio.com" class="link contacts">info@devstudio.com</a></li>
                     <li class="link"><a href="tel:+110001111111" class="link contacts">+11 (000) 111-11-11</a></li>
                 </ul>
-
             </address>
-        </div>
+            </div>
+            <div class="mobile-menu js-menu-container is-hidden" id="mobile-menu">
+                <button type="button" class="modal-close-btn js-close-menu">
+                    <svg class="modal-close-btn-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu-list list">
+                    <li class="link"><a href="./index.html" class="mobile-link studio link">Studio</a></li>
+                    <li class="link"><a href="./portfolio.html" class="mobile-link link">Portfolio</a></li>
+                    <li class="link"><a href="" class="mobile-link link">Contacts</a></li>
+                </ul>
+                <ul class="mobile-menu-contacts list">
+                    <li class="link"><a href="tel:+110001111111" class="link contacts-mob-number">+11 (000) 111-11-11</a></li>
+                    <li class="link"><a href="mailto:info@devstudio.com" class="link contacts-mob-mail">info@devstudio.com</a></li>
+                </ul>
+                <ul class="media-mobile list">
+                    <li class="media-list link">
+                        <a href="" class="social-icn mda">
+                            <svg width="24" height="24" class="media-icon">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="media-list link">
+                        <a href="" class="social-icn mda">
+                            <svg width="24" height="24" class="media-icon">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="media-list link">
+                        <a href="" class="social-icn mda">
+                            <svg width="24" height="24" class="media-icon">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="media-list link">
+                        <a href="" class="social-icn mda">
+                            <svg width="24" height="24" class="media-icon">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
     </header>
     <main>
         <!-- section 1 -->
@@ -181,7 +230,7 @@
                     growth solutions.</p>
             </div>
             <div class="ftr-second">
-                <p class="media">Social media</p>
+                <p class="media-title">Social media</p>
                 <ul class="media list">
                     <li class="media-list link">
                         <a href="" class="social-icn mda">
@@ -214,7 +263,7 @@
                 </ul>
             </div>
             <div class="ftr-third">
-                <p class="media">Subscribe</p>
+                <p class="media-title">Subscribe</p>
                 <form class="ftr-submit-box">
                     <label class="ftr-field">
                         <input  name="user-email" type="email" class="ftr-input" placeholder="E-mail" required>
@@ -226,6 +275,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
